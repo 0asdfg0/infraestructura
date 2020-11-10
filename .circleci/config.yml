@@ -10,7 +10,7 @@
         - run:
             name: Deploy Over SSH
             command: |
-              ssh $name@$host "ls -a"
+              ssh $name@$host "ls -all"
   workflows:
     version: 2
     build-and-deploy:
