@@ -1,6 +1,8 @@
  version: 2
  jobs:
    validar:
+     machine:
+       enabled: true
      steps:
        - add_ssh_keys:
            fingerprints:
