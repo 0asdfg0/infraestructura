@@ -12,8 +12,7 @@
            command: |
              ssh $name@$nfs "sudo apt-get install git
              sudo apt-get install nodejs -y
-             sudo apt-get install npm -y
-             sudo npm install eslint
+             node -v
              cd /galeria/codigo
              sudo git pull "
    deploy:
