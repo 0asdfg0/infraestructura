@@ -25,6 +25,7 @@
    build-and-deploy:
      jobs:
       # - build
+       - validar
        - deploy:
            requires:
             # - build # only deploy once build job has completed
