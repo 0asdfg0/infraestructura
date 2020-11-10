@@ -10,7 +10,7 @@
         - run:
             name: Deploy Over SSH
             command: |
-              ssh $name@$host "sudo ls -all"
+              ssh $name@$host "sudo apt-get update"
   workflows:
     version: 2
     build-and-deploy:
