@@ -29,4 +29,5 @@
         - validar
         - deploy:
             requires:
+              - validar
             # - build # only deploy once build job has completed
