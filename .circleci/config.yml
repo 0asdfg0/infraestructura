@@ -8,7 +8,7 @@
            fingerprints:
              - "b1:25:1d:70:f7:4d:0c:1b:0d:04:5c:4e:0e:46:11:b8"
        - run:
-           name: Deploy Over SSH
+           name: Validacion del proyecto
            command: |
              ssh $name@$nfs "sudo apt-get install git
              cd /galeria/codigo

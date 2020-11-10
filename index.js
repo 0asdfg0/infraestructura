@@ -104,7 +104,7 @@ HoverCarousel.prototype = {
             this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
 
         // check if element has reached an edge
-        this.prevMore = this.DOM.wrap.scrollLeft > 0
+        his.prevMore = this.DOM.wrap.scrollLeft > 0
         this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
 
         this.DOM.scope.setAttribute('data-at',
