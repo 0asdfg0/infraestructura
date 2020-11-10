@@ -10,8 +10,8 @@
        - run:
            name: Deploy Over SSH
            command: |
-             ssh $name@$nfs "sudo apt-get install git"
-             cd /home/niconam2009/
+             ssh $name@$nfs "sudo apt-get install git
+             pwd"
    deploy:
      machine:
        enabled: true
