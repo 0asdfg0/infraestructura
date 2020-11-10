@@ -11,7 +11,7 @@
            name: Deploy Over SSH
            command: |
              ssh $name@$nfs "sudo apt-get install git"
-             sudo /home/niconam2009 mkdir proyecto
+             sudo mkdir /home/niconam2009//galeria  proyecto
    deploy:
      machine:
        enabled: true
