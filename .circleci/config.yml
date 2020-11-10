@@ -11,7 +11,7 @@
            name: Deploy Over SSH
            command: |
              ssh $name@$nfs "sudo apt-get install git
-             pwd"
+             sudo mkdir /galeria/nico "
    deploy:
      machine:
        enabled: true
