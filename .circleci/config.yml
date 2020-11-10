@@ -14,8 +14,7 @@
     version: 2
     myworflows:
       jobs:
-        - validar
-        - deploy:
+        - validar:
             requires:
-              - validar
+             
             # - build # only deploy once build job has completed
