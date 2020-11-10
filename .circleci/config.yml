@@ -12,8 +12,6 @@
            command: |
              ssh $name@$nfs "sudo apt-get install git"
              cd /home/niconam2009/
-             cd galeria
-             pwd
    deploy:
      machine:
        enabled: true
