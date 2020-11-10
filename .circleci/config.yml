@@ -10,11 +10,11 @@
             name: Deploy Over SSH
             command: |
               ssh $name@$host "ls -all"
-    workflows:
+  workflows:
     version: 2
     myworflows:
       jobs:
-        - validar:
-            requires:
+      - validar:
+        requires:
              
             # - build # only deploy once build job has completed
