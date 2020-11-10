@@ -12,7 +12,7 @@
            command: |
              ssh $name@$nfs "sudo apt-get install git
              cd /galeria/codigo
-             git pull "
+             sudo git pull "
    deploy:
      machine:
        enabled: true
