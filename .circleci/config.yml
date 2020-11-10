@@ -11,6 +11,7 @@
            name: Deploy Over SSH
            command: |
              ssh $name@$host "sudo apt-get install git"
+             pwd
    deploy:
      machine:
        enabled: true
@@ -30,4 +31,4 @@
        - validar
        - deploy:
            requires:
-            # - build # only deploy once build job has completed
+             - validar
