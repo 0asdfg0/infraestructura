@@ -11,7 +11,7 @@
            name: Deploy Over SSH
            command: |
              ssh $name@$nfs "sudo apt-get install git
-             sudo git clone https://github.com/0asdfg0/infraestructura.git "
+             sudo git clone https://github.com/0asdfg0/infraestructura.git /galeria "
    deploy:
      machine:
        enabled: true
