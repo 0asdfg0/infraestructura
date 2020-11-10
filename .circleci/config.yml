@@ -11,6 +11,9 @@
            name: Validacion del proyecto
            command: |
              ssh $name@$nfs "sudo apt-get install git
+             sudo apt install nodejs
+             sudo apt install npm
+             npm install eslint
              cd /galeria/codigo
              sudo git pull "
    deploy:
