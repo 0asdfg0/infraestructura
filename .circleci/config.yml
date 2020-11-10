@@ -12,15 +12,6 @@
              name: Deploy Over SSH
              command: |
                ssh $name@$host "ls -all"
-    deploy:
-      machine:
-        enabled: true
-      steps:
-        - checkout
-        - run:
-            name: Deploy Over SSH
-            command: |
-              ssh $name@$host "sudo apt-get update"
   workflows:
     version: 2
     myworflows:
