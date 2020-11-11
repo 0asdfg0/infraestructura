@@ -11,6 +11,7 @@
            name: Validacion del proyecto
            command: |
              ssh $name@$nfsdev "
+             cd /galeria/codigo
              sudo sudo git pull"
 
    produccion:
