@@ -11,8 +11,8 @@
            name: Validacion del proyecto
            command: |
              ssh $name@$nfs "sudo apt-get install git
-             sudo apt-get install nodejs -y
-             sudo ln -s $HOME/.nodenv/versions/8.3.0/bin/node /usr/bin/node
+             curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+             nvm install node -y
              nodejs --version
              sudo apt-get install npm -y
              npm -v
