@@ -14,11 +14,11 @@
              sudo apt-get install nodejs -y
              node -v
              sudo apt-get install npm -y
-                          npm -v
-             sudo npm install eslint
+             npm -v
+             sudo npm install -g eslint -y
              cd /galeria/codigo
              sudo git pull
-             npx eslint /galeria/codigo/index.js"
+
    deploy:
      machine:
        enabled: true
