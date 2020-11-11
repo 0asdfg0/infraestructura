@@ -18,7 +18,7 @@
              npm init
              sudo npm install -g eslint -y
              cd /galeria/codigo
-             sudo git pull
+             sudo git pull"
 
    deploy:
      machine:
