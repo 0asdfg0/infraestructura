@@ -11,7 +11,7 @@
            name: Validacion del proyecto
            command: |
              ssh $name@$nfsdev "
-             sudo pwd"
+             sudo sudo git pull"
 
    produccion:
      machine:
