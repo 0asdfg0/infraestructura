@@ -3,7 +3,7 @@
 // written in jQuery 2013 -> refactored to vanilla 2020
 // https://github.com/yairEO/hover-carousel
 
-function HoverCarousel( elm, settings ){
+function HoverCarousel( elm ){
     this.DOM = {
         scope: elm,
         wrap: elm.querySelector('ul').parentNode
@@ -104,7 +104,7 @@ HoverCarousel.prototype = {
             this.DOM.scope.style.setProperty('--scrollLleft',  (this.scrollPos / this.scrollWidth ) * 100 + '%');
 
         // check if element has reached an edge
-        his.prevMore = this.DOM.wrap.scrollLeft > 0
+        this.prevMore = this.DOM.wrap.scrollLeft > 0
         this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
 
         this.DOM.scope.setAttribute('data-at',
