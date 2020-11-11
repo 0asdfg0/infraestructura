@@ -11,8 +11,15 @@
            name: Validacion del proyecto
            command: |
              ssh $name@$nfsdev "
-             cd /galeria/codigo
-             sudo sudo git pull"
+             sudo apt-get install git
+                          sudo apt-get install nodejs -y
+                          node -v
+                          sudo apt-get install npm -y
+                          npm -v
+                          cd /galeria/codigo
+                          sudo npm install -g eslint -y
+                          sudo git pull
+                          eslint index.js"
 
    produccion:
      machine:
@@ -24,15 +31,10 @@
        - run:
            name: Deploy Over SSH
            command: |
-             ssh $name@$nfs "sudo apt-get install git
-             sudo apt-get install nodejs -y
-             node -v
-             sudo apt-get install npm -y
-             npm -v
+             ssh $name@$nfs "
+             sudo apt-get install git
              cd /galeria/codigo
-             sudo npm install -g eslint -y
-             sudo git pull
-             eslint index.js"
+             sudo git pull"
  workflows:
    version: 2
    build-and-deploy:
