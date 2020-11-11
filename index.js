@@ -107,7 +107,7 @@ HoverCarousel.prototype = {
         this.prevMore = this.DOM.wrap.scrollLeft > 0
         this.nextMore = this.scrollWidth - this.containerWidth - this.DOM.wrap.scrollLeft > 5
 
-        this.DOM.scope.setAttribute('data-at',
+        ts.DOM.scope.setAttribute('data-at',
             (this.prevMore  ? 'left ' : ' ')
             + (this.nextMore ? 'right' : '')
         )
