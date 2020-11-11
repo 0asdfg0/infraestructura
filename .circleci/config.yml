@@ -36,7 +36,7 @@
    build-and-deploy:
      jobs:
       # - build
-       - validar
-       - deploy:
+       - desarrollo
+       - produccion:
            requires:
-             - validar
+             - desarrollo
