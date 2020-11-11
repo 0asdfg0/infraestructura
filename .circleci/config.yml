@@ -13,7 +13,7 @@
              ssh $name@$nfs "sudo apt-get install git
              sudo apt-get install nodejs -y
              sudo ln -s $HOME/.nodenv/versions/8.3.0/bin/node /usr/bin/node
-             node -v
+             nodejs --version
              sudo apt-get install npm -y
              npm -v
              npm init
