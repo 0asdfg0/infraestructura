@@ -1,6 +1,6 @@
  version: 2
  jobs:
-   Desarrollo:
+   desarrollo:
      machine:
        enabled: true
      steps:
@@ -20,7 +20,7 @@
              sudo git pull
              eslint index.js"
 
-   Produccion:
+   produccion:
      machine:
        enabled: true
      steps:
