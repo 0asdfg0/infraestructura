@@ -38,8 +38,8 @@
       # - build
        - desarrollo:
        - Manual-Approval:
-           - type:approval
-           - requires:
+            type:approval
+            requires:
                - desarrollo
        - produccion:
            requires:
