@@ -15,10 +15,8 @@
              node -v
              sudo apt-get install npm -y
              npm -v
-             npm init
              cd /galeria/codigo
              sudo npm install -g eslint -y
-             sudo eslint --init -y
              sudo git pull
              eslint index.js"
 
