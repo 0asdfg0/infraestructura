@@ -36,11 +36,11 @@
    build-and-deploy:
      jobs:
       # - build
-       - desarrollo
+       - produccion
        - Manual-Approval:
           type: approval
           requires:
-            - desarrollo
-       - produccion:
+            - produccion
+       - desarrollo:
           requires:
             - Manual-Approval
