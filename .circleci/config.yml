@@ -38,7 +38,7 @@
       # - build
        - desarrollo:
        - Manual-Approval:
-            type:approval
+            type: approval
             requires:
                - desarrollo
        - produccion:
